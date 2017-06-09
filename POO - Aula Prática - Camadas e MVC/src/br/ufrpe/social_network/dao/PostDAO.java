@@ -6,4 +6,7 @@ public class PostDAO {
     
     //TODO Implementar CRUD para classe básica Post usando ArrayList
 
+    /*
+     * Antes de implementar os métodos, pense bem na assinatura dos mesmos
+     */
 }

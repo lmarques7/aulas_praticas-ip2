@@ -6,4 +6,8 @@ public class PersonDAO {
     
     //TODO Implementar CRUD para classe básica Person usando array
     
+    /*
+     * Antes de implementar os métodos, pense bem na assinatura dos mesmos
+     */
+    
 }
