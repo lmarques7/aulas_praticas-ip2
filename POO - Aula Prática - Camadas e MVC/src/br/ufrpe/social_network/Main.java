@@ -1,9 +1,12 @@
 package br.ufrpe.social_network;
 
+import br.ufrpe.social_network.gui.TextualUserInterface;
+
 public class Main {
 
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
+        TextualUserInterface textUI = new TextualUserInterface();
+        textUI.showUserInterface();
     }
 
 }
