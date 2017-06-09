@@ -21,6 +21,11 @@ public class Post {
         this(null, null);
     }
 
+    public long getId() {
+        return this.id;
+    }
+    
+    
     // TODO gerar todos os métodos get/set, exceto o setId
     
     public void addComment(Post comment) {
