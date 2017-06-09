@@ -7,7 +7,7 @@ public class TextualUserInterface {
         
         /*
         
-        1. Crie quatro pessoas e salve-as
+        1.  Crie quatro pessoas e salve-as
         2.  Apague uma das pessoas
         3.  Atualize o nome de uma das pessoas
         4.  Busque por um objeto do tipo pessoa que tenha um ID qualquer.
