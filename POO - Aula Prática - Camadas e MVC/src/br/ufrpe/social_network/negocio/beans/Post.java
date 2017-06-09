@@ -38,6 +38,6 @@ public class Post {
     @Override
     public String toString() {
         // TODO Implementar método toString da classe Person
-        return "Coloque sua implementa��o aqui";
+        return "Coloque sua implementação aqui";
     }
 }

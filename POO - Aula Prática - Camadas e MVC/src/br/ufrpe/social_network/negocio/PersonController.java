@@ -1,7 +1,5 @@
 package br.ufrpe.social_network.negocio;
 
-import java.util.ArrayList;
-
 import br.ufrpe.social_network.dao.PersonDAO;
 import br.ufrpe.social_network.negocio.beans.Person;
 
