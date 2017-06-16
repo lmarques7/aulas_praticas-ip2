@@ -76,7 +76,10 @@ public class Person {
     
     @Override
     public String toString() {
-        // TODO Implementar método toString da classe Person
-        return "Coloque sua implementação aqui";
+        String resultado;
+        resultado = "Nome: " + this.name + "\n"+"Nascimento: "+ this.birthDate + "\nPaís: "+ this.country
+        		+ "\n\n";
+        
+        return resultado;
     }
 }
