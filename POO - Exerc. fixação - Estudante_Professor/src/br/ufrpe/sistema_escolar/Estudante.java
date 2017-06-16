@@ -43,7 +43,7 @@ public class Estudante extends Pessoa {
     
     @Override
     public String toString() {
-        String resultado = super.toString() + "\n";
+        String resultado = super.toString() + " - ESTUDANTE\n";
         
         for (int i = 0; i < this.numCursos; i++) {
             resultado += "\tCurso: " + this.cursos[i] + ". Nota: " + this.notas[i] + "\n";
