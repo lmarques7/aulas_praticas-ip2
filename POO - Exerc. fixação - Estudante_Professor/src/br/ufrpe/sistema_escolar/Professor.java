@@ -54,4 +54,18 @@ public class Professor extends Pessoa {
         return resultado;
     }
 
+    /**
+     * @return the cursos
+     */
+    public String[] getCursos() {
+        return cursos;
+    }
+
+    /**
+     * @return the numCursos
+     */
+    public int getNumCursos() {
+        return numCursos;
+    }
+    
 }

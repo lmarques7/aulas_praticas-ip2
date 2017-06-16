@@ -55,4 +55,18 @@ public class Estudante extends Pessoa {
     public void imprimeNotas() {
         System.out.println(this.toString());
     }
+
+    /**
+     * @return the numCursos
+     */
+    public int getNumCursos() {
+        return numCursos;
+    }
+
+    /**
+     * @return the cursos
+     */
+    public String[] getCursos() {
+        return cursos;
+    }
 }
