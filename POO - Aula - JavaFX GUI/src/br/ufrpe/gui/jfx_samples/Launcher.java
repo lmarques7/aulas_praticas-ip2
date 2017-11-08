@@ -9,6 +9,8 @@ public class Launcher extends Application {
     public void start(Stage primaryStage) {        
       ScreenManager.getInstance().setMainStage(primaryStage);
       ScreenManager.getInstance().showTestScreen();
+      
+      primaryStage.show();
     }
 
     public static void main(String[] args) {

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufrpe.gui.jfx_samples.ExemploController">
+   <left>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnExecutar" mnemonicParsing="false" onAction="#btnExecutarAction" prefHeight="25.0" prefWidth="80.0" text="Executar" />
+            <Button fx:id="btnSalvar" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" text="Salvar" />
+         </children>
+      </VBox>
+   </left>
+</BorderPane>
