@@ -8,13 +8,14 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-public class BasicFormScreen extends Application {
+public class BasicFormScreen extends Application implements EventHandler<ActionEvent> {
     
     private HBox hbox;
     private VBox vbox;
@@ -48,21 +49,39 @@ public class BasicFormScreen extends Application {
         this.btnRemover = new Button("Remover");
         this.btnOK = new Button("OK");
         this.btnCancelar = new Button("Cancelar");
-        
-        this.btnOK.setOnAction(new EventHandler<ActionEvent>() {
-            public void handle(ActionEvent event) {
-                Alert alert = new Alert(AlertType.INFORMATION);
-                alert.setTitle("Do botão azul");
-                alert.setContentText("BOTãO AZUL com inner class");
-                alert.showAndWait();
-            }
-        });
+        this.btnCancelar.setOnAction(this);
+        this.btnOK.setOnAction(this);
         
         this.txtFldNome = new TextField("Nome");
         this.txtFldNome.setPrefWidth(200);
         
         this.txtFldLogin = new TextField("Login");
         this.txtFldLogin.setPrefWidth(200);
+        
+        this.txtFldLogin.setOnKeyPressed(
+            // Exemplo de anonymous inner class
+            new EventHandler<KeyEvent>() {
+                @Override
+                public void handle(KeyEvent event) {
+                    // TODO Auto-generated method stub
+                }
+            }
+        );
+        
+        // Exemplo de uso de classe tratadora de eventos no próprio objeto (this) 
+        this.txtFldLogin.setOnAction(this);
+        
+        this.txtFldLogin.setOnKeyTyped(event -> {
+            System.out.println(event.getCharacter());
+            // Exemplo de lambda com interface funcional
+            if (event.getCharacter().equals("$")) {
+                Alert alert = new Alert(AlertType.ERROR);
+                alert.setTitle("Atenção");
+                alert.setContentText("Você não pode digitar '$' no login");
+                alert.showAndWait();
+            }
+            
+        });
         
         this.txtFldSenha = new PasswordField();
         this.txtFldSenha.setPrefWidth(200);
@@ -94,6 +113,23 @@ public class BasicFormScreen extends Application {
     
     public static void main(String[] args) {
         launch(args);
+    }
+
+    @Override
+    public void handle(ActionEvent event) {
+        if (event.getSource() == this.btnCancelar) {
+            Alert alert = new Alert(AlertType.ERROR);
+            alert.setTitle("Atenção");
+            alert.setContentText("Evento original de " + event.getSource().getClass() + " lançado");
+            alert.showAndWait();
+        } else if(event.getSource() == this.btnOK) {
+            Alert alert = new Alert(AlertType.CONFIRMATION);
+            alert.setTitle("Atenção");
+            alert.setContentText("Evento original de " + event.getSource().getClass() + " lançado");
+            alert.showAndWait();
+        }
+            
+        
     }
 
 }
