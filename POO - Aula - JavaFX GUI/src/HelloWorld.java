@@ -38,8 +38,8 @@ public class HelloWorld extends Application {
     Text label = new Text("Olá JavaFX");
     Font font = Font.font("Lucida Handwriting", FontWeight.BOLD, 76);
     label.setFont(font);
-    label.setEffect(is);    
-    label.setFill(Color.BLUEVIOLET);
+    label.setEffect(ref);    
+    label.setFill(Color.MEDIUMPURPLE);
     
     primaryStage.setWidth(640);
     primaryStage.setHeight(480);

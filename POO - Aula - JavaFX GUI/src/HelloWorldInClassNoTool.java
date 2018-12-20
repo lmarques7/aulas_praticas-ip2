@@ -1,4 +1,5 @@
 import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -25,13 +26,20 @@ public class HelloWorldInClassNoTool extends Application {
         l1.setLayoutY(60);
         
         BorderPane myPane = new BorderPane();
-        Pane p2 = new Pane();
+//        Pane p2 = new Pane();
         
-        myPane.setLeft(p2);
+        myPane.setRight(l1);
         myPane.setCenter(b1);
         
+//        p2.getChildren().add(b1);
+//        p2.getChildren().add(l1);
+        
+        Pane p = FXMLLoader.load(getClass().getResource(
+                "/br/ufrpe/gui/jfx_samples/2button.fxml"));
+        Scene scene = new Scene(p);
+        
         Scene myScene = new Scene(myPane);
-        primaryStage.setScene(myScene);
+        primaryStage.setScene(scene);
         
         primaryStage.setWidth(800);
         primaryStage.setHeight(600);

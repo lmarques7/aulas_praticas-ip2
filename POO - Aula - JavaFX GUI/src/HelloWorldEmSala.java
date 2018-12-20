@@ -9,6 +9,7 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.effect.InnerShadow;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
@@ -30,7 +31,7 @@ public class HelloWorldEmSala extends Application {
         mainStage.setHeight(480);
 
         AnchorPane pane = new AnchorPane();
-
+        
         azul = new Button("Blue");
         azul.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent event) {
