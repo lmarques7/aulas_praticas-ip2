@@ -1,4 +1,4 @@
-package producer_consumer;
+package br.ufrpe.concurrency_class.producer_consumer;
 
 import java.util.Random;
 
