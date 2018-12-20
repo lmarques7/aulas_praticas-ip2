@@ -20,7 +20,7 @@ public class ExecutorInvokeAny {
 
         String result = executor.invokeAny(callables);
         System.out.println(result);
-
+        // Resultado com task2 por terminar mais rápido
     }
 
     static Callable<String> callable(String result, long sleepSeconds) {

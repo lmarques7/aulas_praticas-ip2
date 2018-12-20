@@ -9,6 +9,8 @@ import java.util.concurrent.Executors;
 public class ExecutorInvokeAllComStream {
 
     public static void main(String[] args) throws InterruptedException {
+        // newWorkStealingPool usa capacidade coerente da máquina de acordo
+        // com o número de CPUs disponíveis
         ExecutorService executor = Executors.newWorkStealingPool();
 
         List<Callable<String>> callables = Arrays.asList(
