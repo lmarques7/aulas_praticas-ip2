@@ -2,7 +2,7 @@ package br.ufrpe.concurrency_class.executors_lambdas;
 
 import java.util.concurrent.TimeUnit;
 
-public class SingleThreadWait {
+public class SingleThreadSleep {
 
     public static void main(String[] args) {
         Runnable runnable = () -> {
