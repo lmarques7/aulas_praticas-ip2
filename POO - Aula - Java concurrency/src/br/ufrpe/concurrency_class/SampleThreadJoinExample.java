@@ -23,11 +23,15 @@ class SampleThreadJoinExample extends Thread {
     }
     
     public static void main(String[] args) throws InterruptedException {
+            Thread t1 = new SampleThreadJoinExample(10);
             Thread t2 = new SampleThreadJoinExample(5);
             t2.start();
+            t1.start();
             System.out.println("Invoking join");
-            t2.join();
-            System.out.println("Returned from join");
+            t2.join(2000);
+            System.out.println("Returned from join de t2 " + Thread.currentThread().getName());
+            t1.join();
+            System.out.println("Returned from join de t1" + Thread.currentThread().getName());
             System.out.println("Is t2 alive: " + t2.isAlive());
     }
 }
