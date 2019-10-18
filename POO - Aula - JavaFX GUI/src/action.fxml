@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ActionController">
+   <children>
+      <Button layoutX="234.0" layoutY="221.0" mnemonicParsing="false" onAction="#botaoPressionado" text="Copiar e colar" />
+      <TextField fx:id="from" layoutX="204.0" layoutY="70.0" />
+      <TextField fx:id="to" layoutX="204.0" layoutY="137.0" />
+   </children>
+</Pane>

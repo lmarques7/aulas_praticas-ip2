@@ -11,7 +11,7 @@ public class AbasLauncher extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         BorderPane testPane = FXMLLoader.load(getClass().getResource(
-                "/br/ufrpe/gui/jfx_samples/Abas.fxml"));
+                "Abas.fxml"));
         
         // inicializando cena
         Scene abasScene = new Scene(testPane);
