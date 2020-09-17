@@ -45,7 +45,6 @@ public class RepositorioContas {
      *         false - se não foi
      */
     public boolean removerConta(String numero) {
-        boolean resultado = false;
         boolean numeroExiste = false;
         int i;
         for (i = 0; i < this.contas.size() && !numeroExiste; i++) {
@@ -56,9 +55,8 @@ public class RepositorioContas {
         }
         if (numeroExiste) {
             this.contas.remove(i-1);
-            resultado = true;
         }
-        return resultado;
+        return numeroExiste;
     }
     
     public String toString() {

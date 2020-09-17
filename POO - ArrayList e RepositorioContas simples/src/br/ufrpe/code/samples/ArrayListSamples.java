@@ -1,7 +1,6 @@
 package br.ufrpe.code.samples;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 public class ArrayListSamples {
 
@@ -30,24 +29,23 @@ public class ArrayListSamples {
         
         nomes.addAll(nomes2);
 
-        // 4 - Usando foreach com ArrayList
-        
-/*        for (int i = 0; i < nomes.size(); i++) {
+        // 4 - Usando for / foreach com ArrayList        
+        for (int i = 0; i < nomes.size(); i++) {
             System.out.println(nomes.get(i));
-        }*/
+        }
         
         for (String elemento : nomes) {
             System.out.println(elemento);
         }
         
-        // 5 - Wrapper (boxing e unboxing)
-        
+        // 5 - Wrapper (boxing e unboxing)        
         ArrayList<Integer> numeros = new ArrayList<>();
         Integer num = 45;
         numeros.add(num);
         numeros.add(984351);
         
         // 6 - Array e ArrayList com GarbageColletion (GC)
+        // Explicação nos slides
 
     }
 
