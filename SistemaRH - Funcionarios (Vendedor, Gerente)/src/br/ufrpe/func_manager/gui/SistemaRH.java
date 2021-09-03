@@ -6,12 +6,13 @@ import java.util.List;
 import br.ufrpe.func_manager.beans.Funcionario;
 import br.ufrpe.func_manager.beans.Gerente;
 import br.ufrpe.func_manager.beans.Vendedor;
+import br.ufrpe.func_manager.dados.IRepositorio;
 import br.ufrpe.func_manager.dados.RepositorioFuncionariosArray;
 
 public class SistemaRH {
     
     public static void main(String[] args) {
-        RepositorioFuncionariosArray repositorio = new RepositorioFuncionariosArray();
+        IRepositorio repositorio = new RepositorioFuncionariosArray();
         repositorio.inserir(new Gerente(1, "Leandro", 3000, LocalDate.of(2017, 2, 6), "Vendas"));
         repositorio.inserir(new Gerente(2, "Maria", 4000, LocalDate.of(2014, 2, 6), "Vendas"));
         repositorio.inserir(new Gerente(3, "Bruna", 6000, LocalDate.of(2018, 2, 6), "Admin"));
@@ -26,6 +27,8 @@ public class SistemaRH {
         
         List<Funcionario> funcionarios = repositorio.listarPorCargo(Vendedor.class);
         SistemaRH.imprimirFolha(funcionarios);
+        
+        System.out.println("Média dos gerentes é %.2f: " + repositorio.calcularMediaSalarialGerentes());
     }
     
     public static void imprimirFolha(List<Funcionario> listaFuncionarios) {

@@ -1,12 +1,13 @@
 package br.ufrpe.func_manager.dados;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
 import br.ufrpe.func_manager.beans.Funcionario;
 import br.ufrpe.func_manager.beans.Gerente;
 
-public class RepositorioFuncionariosArray {
+public class RepositorioFuncionariosArray implements IRepositorio {
 
     private ArrayList<Funcionario> funcionarios;
 
@@ -14,6 +15,10 @@ public class RepositorioFuncionariosArray {
         this.funcionarios = new ArrayList<Funcionario>(50);
     }
 
+    /* (non-Javadoc)
+     * @see br.ufrpe.func_manager.dados.IRepositorio#inserir(br.ufrpe.func_manager.beans.Funcionario)
+     */
+    @Override
     public boolean inserir(Funcionario novoF) {
         boolean resultado = false;
         if (novoF != null) {
@@ -31,6 +36,10 @@ public class RepositorioFuncionariosArray {
         return resultado;
     }
 
+    /* (non-Javadoc)
+     * @see br.ufrpe.func_manager.dados.IRepositorio#buscar(int)
+     */
+    @Override
     public Funcionario buscar(int codigo) {
         Funcionario retorno = null;
         int indice = this.buscarIndice(codigo);
@@ -41,6 +50,10 @@ public class RepositorioFuncionariosArray {
         return retorno;
     }
 
+    /* (non-Javadoc)
+     * @see br.ufrpe.func_manager.dados.IRepositorio#remover(int)
+     */
+    @Override
     public boolean remover(int codigo) {
         Funcionario f = this.buscar(codigo);
         boolean resultado = false;
@@ -51,6 +64,10 @@ public class RepositorioFuncionariosArray {
         return resultado;
     }
 
+    /* (non-Javadoc)
+     * @see br.ufrpe.func_manager.dados.IRepositorio#atualizar(int, br.ufrpe.func_manager.beans.Funcionario)
+     */
+    @Override
     public boolean atualizar(int codigo, Funcionario novoF) {
         boolean resultado = false;
         int indice = this.buscarIndice(codigo);
@@ -71,6 +88,10 @@ public class RepositorioFuncionariosArray {
         return indice;
     }
 
+    /* (non-Javadoc)
+     * @see br.ufrpe.func_manager.dados.IRepositorio#listarPorCargo(java.lang.Class)
+     */
+    @Override
     public List<Funcionario> listarPorCargo(Class tipoFuncionario) {
         List<Funcionario> lista = new ArrayList<>();
         for (Funcionario f : funcionarios) {
@@ -81,6 +102,10 @@ public class RepositorioFuncionariosArray {
         return lista;
     }
     
+    /* (non-Javadoc)
+     * @see br.ufrpe.func_manager.dados.IRepositorio#ganhamAcimaDe(double)
+     */
+    @Override
     public List<Funcionario> ganhamAcimaDe(double salario) {
         List<Funcionario> lista = new ArrayList<>();
         for (Funcionario f : funcionarios) {
@@ -90,7 +115,21 @@ public class RepositorioFuncionariosArray {
         }
         return lista;
     }
+    
+    public Funcionario umQueGanhaAcimaDe(double salario) {
+        Funcionario resultado = null;
+        for (int i = 0; i < funcionarios.size() && resultado != null; i++) {
+            if (funcionarios.get(i).getSalario() > salario) {
+                resultado = funcionarios.get(i);
+            }
+        }
+        return resultado;
+    }
 
+    /* (non-Javadoc)
+     * @see br.ufrpe.func_manager.dados.IRepositorio#calcularMediaSalarialGerentes()
+     */
+    @Override
     public double calcularMediaSalarialGerentes() {
         double resultado = 0.0;
         int contador = 0;
@@ -106,6 +145,10 @@ public class RepositorioFuncionariosArray {
         return resultado;
     }
 
+    /* (non-Javadoc)
+     * @see br.ufrpe.func_manager.dados.IRepositorio#obterFuncionarioMaisNovo()
+     */
+    @Override
     public Funcionario obterFuncionarioMaisNovo() {
         Funcionario maisNovo = null;
         for (Funcionario f : funcionarios) {
@@ -119,5 +162,23 @@ public class RepositorioFuncionariosArray {
 
         }
         return maisNovo;
+    }
+
+    @Override
+    public double calcularMediaSalarialPorPeriodo(LocalDate inicio,
+            LocalDate fim) {
+        double acumulador = 0;
+        int contador = 0;
+        for (Funcionario f: this.funcionarios) {
+            if (f.getDataAdmissao().isAfter(inicio) && f.getDataAdmissao().isBefore(fim)) {
+                acumulador += f.getSalario();
+                contador++;
+            }
+        }
+        double resultado = 0;
+        if (contador > 0) {
+            resultado = acumulador / contador;
+        }
+        return resultado;
     }
 }

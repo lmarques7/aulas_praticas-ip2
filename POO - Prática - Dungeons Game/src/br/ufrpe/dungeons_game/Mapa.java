@@ -25,7 +25,7 @@ public class Mapa {
         
         this.posicaoXJogador = 9;
         this.posicaoYJogador = 9;
-        realizarSorteioMapa();
+        realizarSorteio();
     }
     
     public void movimentarJogador(char direcao) {
@@ -59,7 +59,7 @@ public class Mapa {
         matriz[posicaoYJogador][posicaoXJogador] = JOGADOR;
     }
     
-    private void realizarSorteioMapa() {
+    private void realizarSorteio() {
         Random seed = new Random();
         
         for (int i = 0; i < matriz.length; i++) {
