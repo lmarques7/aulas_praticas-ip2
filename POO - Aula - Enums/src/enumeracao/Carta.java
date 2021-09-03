@@ -34,5 +34,10 @@ public class Carta {
       this.naipe = naipe;
     }
     
+    @Override
+    public String toString() {
+        return this.carta.name() + "-" + this.naipe.name();
+    }
+    
     
 }
