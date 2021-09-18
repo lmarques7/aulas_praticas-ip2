@@ -2,7 +2,6 @@ package br.ufrpe.vendas;
 
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
-import java.time.temporal.TemporalUnit;
 
 public class Cliente {
 

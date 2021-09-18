@@ -5,9 +5,9 @@ import java.time.LocalDateTime;
 public class Venda {
 
     private Cliente clienteComprador;
-    private ItemVenda[] itensDeVenda;
-    private LocalDateTime dataHoraVenda;
     private String atendente;
+    private LocalDateTime dataHoraVenda;
+    private ItemVenda[] itensDeVenda;
     private int indiceProximoItemVenda;
 
     public Venda(Cliente clienteComprador, LocalDateTime dataHoraVenda, String atendente) {
