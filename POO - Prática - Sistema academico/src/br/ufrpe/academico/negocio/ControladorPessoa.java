@@ -23,9 +23,9 @@ public class ControladorPessoa {
         return instance;
     }
     
-    public void realizarCadastroAluno() {
+    public void realizarCadastroAluno(Aluno a) {
         // TODO Cadastrar aluno no repositório de pessoas
-        // O aluno só pode ser cadastrador se for maior de idade na data corrente
+        // O aluno só pode ser cadastrado se for maior de idade na data corrente
         // do momento da execução do método. Use o repositorioPessoas para salvar 
         // o objeto Aluno.
         // Se um aluno for menor de idade, uma exceção devera ser criada e levantada

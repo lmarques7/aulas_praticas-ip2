@@ -37,7 +37,8 @@ public class ControladorCursoDisciplinaTurma {
         // Usar dias da semana e horários à sua escolha.
         // OBS: Uma nova turma não poderá ser aberta se já houver três outras turmas 
         // no mesmo ano/semestre para a disciplina informada como parâmetro. 
-        // Para consultar outras turmas, use o repositorioTurma da classe 
+        // Se necessário, implemente métodos equals nas classes básicas (models)
+        // Para consultar outras turmas, use o repositorioTurma desta classe 
     }
     
     public List<Turma> buscarTurmasComPoucosAlunos() {
@@ -66,8 +67,8 @@ public class ControladorCursoDisciplinaTurma {
         // Há uma situação excepcional se uma matrícula de um dado aluno tentar 
         // ser feita mais de uma vez para uma mesma disciplina. Nesse caso, uma 
         // exceção deverá ser levantada representando tal ocorrência. A assinatura
-        // deste então deve ser alterada para listar a exceção e a classe que 
-        // representa a exceção também deverá ser criada
+        // deste método então deve ser alterada para listar a exceção e a classe 
+        // que representa a exceção também deverá ser criada
         
     }
 }
