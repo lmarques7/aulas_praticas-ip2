@@ -8,12 +8,12 @@ import br.ufrpe.academico.models.Pessoa;
 
 public class ControladorPessoa {
     
-    private RepositorioGenerico<? extends Pessoa> repositorioPessoas;
+    private RepositorioGenerico<Pessoa> repositorioPessoas;
     
     private static ControladorPessoa instance;
 
     private ControladorPessoa() {
-        this.repositorioPessoas = new RepositorioGenerico<Pessoa>("pessoas.dat");
+        this.repositorioPessoas = new RepositorioGenerico<>("pessoas.dat");
     }
     
     public static ControladorPessoa getInstance() {
