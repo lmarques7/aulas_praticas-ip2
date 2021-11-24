@@ -31,7 +31,7 @@ public class ControladorCursoDisciplinaTurma {
     }
 
     public void abrirTurmaAnoCorrente(Professor p, Disciplina d, int semestre) {
-        // TODO Abrir uma turma da discilina, professor e semestre informados como parâmetro
+        // TODO (25pts) Abrir uma turma da discilina, professor e semestre informados como parâmetro
         // Instanciar uma Turma com base na disciplina, professor e semestre informados. 
         // Usar nessa instância o ano corrente no momento da execução do método.
         // Usar dias da semana e horários à sua escolha.
@@ -42,7 +42,7 @@ public class ControladorCursoDisciplinaTurma {
     }
     
     public List<Turma> buscarTurmasComPoucosAlunos() {
-        // TODO Implementar método para filtrar turmas com menos da metade da capacidade máxima de alunos
+        // TODO (25pts) Implementar método para filtrar turmas com menos da metade da capacidade máxima de alunos
         // - Considere que turmas já foram criadas e já tiveram alunos matriculados
         // - As turmas são acessíveis através do respositorioTurma
         // - Use a constante CAPACIDADE_MAXIMA da classe Turma
@@ -50,14 +50,14 @@ public class ControladorCursoDisciplinaTurma {
     }
     
     public List<Curso> buscarCursosComCoordenadorIgualA(Professor coordenador) {
-        // TODO Implementar método para buscar Cursos cujo coordenador é informado como parâmetro
+        // TODO (20pts) Implementar método para buscar Cursos cujo coordenador é informado como parâmetro
         // - Considere que cursos já foram criados e armazenados no repositório
         // - Os cursos são acessíveis através do repositorioCursos
         return null;
     }
     
     public void matricularAlunoEmTurmaDaDisciplina(Aluno aluno, Disciplina disciplina) {
-        // TODO Realizar a matrícula do aluno em alguma turma da disciplina informada
+        // TODO (40pts) Realizar a matrícula do aluno em alguma turma da disciplina informada
         // Este método deve buscar por turmas que tenham poucos alunos matriculados
         // usando o método 'buscarTurmasComPoucosAlunos' e então ver se há turmas
         // ofertadas com a disciplina entregue como parâmetro e só então realizar

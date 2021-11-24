@@ -9,7 +9,7 @@ public class Turma {
     private int ano;
     private int semestre;
 
-    // TODO Crie uma enumeração para representar melhor os dias da semana
+    // TODO (10pts) Crie uma enumeração para representar melhor os dias da semana
     private List<String> diasDaSemana;
     private List<LocalTime> horarios;
     private Disciplina disciplina;

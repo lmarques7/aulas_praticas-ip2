@@ -9,7 +9,7 @@ public class Avaliacao {
     private Turma turma;
     private double nota;
 
-    // TODO Crie uma enumeração para representar melhor a categoria de uma nota
+    // TODO (10pts) Crie uma enumeração para representar melhor a categoria de uma nota
     private String categoriaNota; // representando a categoria como 1a/2a/3a VA
 
     public Aluno getAlunoRealizador() {

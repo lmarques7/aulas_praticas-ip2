@@ -24,7 +24,7 @@ public class ControladorPessoa {
     }
     
     public void realizarCadastroAluno(Aluno a) {
-        // TODO Cadastrar aluno no repositório de pessoas
+        // TODO (20pts) Cadastrar aluno no repositório de pessoas
         // O aluno só pode ser cadastrado se for maior de idade na data corrente
         // do momento da execução do método. Use o repositorioPessoas para salvar 
         // o objeto Aluno.
@@ -33,7 +33,7 @@ public class ControladorPessoa {
     }
     
     public List<Aluno> buscarAlunosComTelefoneIniciandoCom(String ddd) {
-        // TODO Listar alunos (somente alunos) cujo telefone se iniciam com o ddd informado como parâmetro
+        // TODO (20pts) Listar alunos (somente alunos) cujo telefone se iniciam com o ddd informado como parâmetro
         // Observe que você não deve retornar instâncias de professores com este
         // DDD, mas somente alunos. Use o repositorioPessoas para buscar informações.
         return null;
