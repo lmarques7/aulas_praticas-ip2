@@ -6,6 +6,7 @@ public class Autor {
     private char gender;
     
     public Autor(String n, String e, char g) {
+        // Construtor com parâmetros
         name = n;
         email = e;
         gender = g;
@@ -16,6 +17,7 @@ public class Autor {
     }
 
     public void setEmail(String email) {
+    	// Isso representa meu e-mail 
         this.email = email;
     }
 
