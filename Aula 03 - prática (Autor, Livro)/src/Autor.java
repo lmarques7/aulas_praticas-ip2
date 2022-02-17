@@ -6,6 +6,7 @@ public class Autor {
     private char gender;
     
     public Autor(String n, String e, char g) {
+        // Construtor com parâmetros
         name = n;
         email = e;
         gender = g;
