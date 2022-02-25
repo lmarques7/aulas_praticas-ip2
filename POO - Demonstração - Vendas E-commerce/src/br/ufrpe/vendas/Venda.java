@@ -1,6 +1,7 @@
 package br.ufrpe.vendas;
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class Venda {
 
@@ -24,12 +25,13 @@ public class Venda {
     }
     
     public void listarItensVenda() {
-        System.out.printf("Data da venda: %s\n", this.dataHoraVenda);
+        String dataFormatada = DateTimeFormatter.ofPattern("dd/MM/YYYY HH:MM:ss").format(this.dataHoraVenda);
+        System.out.printf("Data da venda: %s\n", dataFormatada);
         System.out.printf("Cliente: %s | CPF: %s | Idade: %s\n", this.clienteComprador.getNome(),
                 this.clienteComprador.getCpf(), this.clienteComprador.calcularIdade());
         System.out.printf("Atendente: %s\n", this.atendente);
         
-        System.out.printf("%-20s|%-13s|%-12s|%-13s\n", "Nome do produto", "Preço", "Quantidade", "Total");
+        System.out.printf("%-20s|%13s|%12s|%13s\n", "Nome do produto", "Preço", "Quantidade", "Total");
         for (int i = 0; i < 61; i++) System.out.printf("-");
         System.out.println();
         for (int i = 0; i < this.indiceProximoItemVenda; i++) {
