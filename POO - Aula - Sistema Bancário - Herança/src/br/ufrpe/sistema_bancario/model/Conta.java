@@ -7,9 +7,14 @@ public class Conta {
 	private String numero;
 	protected double saldo;
 	
-	public Conta(String numero, double saldo){
+	public Conta(String numero, double saldo) {
 		this.setNumero(numero);
 		this.setSaldo(saldo);
+	}
+	
+	public Conta(String numero) {
+	    this.setNumero(numero);
+	    this.saldo = 0;
 	}
 	
 	public String getNumero() {
