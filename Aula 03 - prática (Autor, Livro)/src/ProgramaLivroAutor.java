@@ -1,23 +1,37 @@
+import java.util.ArrayList;
+import java.util.Scanner;
 
 public class ProgramaLivroAutor {
 
+    private ArrayList<Autor> autores = new ArrayList<>();
+
     public static void main(String[] args) {
-        Autor autor1 = new Autor("Paulo", "paulo@xxx.com", 'M');
-        Autor autor2 = new Autor("Marcelo", "marcelo@gmail.com", 'M');
+        Scanner s = new Scanner(System.in);
+
+        Autor autor1 = ProgramaLivroAutor.recuperaAutorDoTeclado();
+        Autor autor2 = ProgramaLivroAutor.recuperaAutorDoTeclado();
         
-        Livro livro1 = new Livro("O Senhor do anéis", autor1, 35.90, 30);
-        Livro livro2 = new Livro("Menino pobre", autor2, 5.90, 100);
-        
-        System.out.println( "Nome do livro 1: " + livro1.getName() );
-        System.out.println( "Preço do livro 1: " + livro1.getPrice() );
-        System.out.println( "Nome do autor do livro 1: " +  livro1.getAutor().getName() );
-        
-        System.out.println("=============");
-        System.out.println(livro1.toString());
-        
+        Livro livro1 = new Livro("O Senhor do anéis", 35.90, 30);
+        livro1.addAutor(autor1);
+        livro1.addAutor(autor2);
+
         System.out.println("=============");
         System.out.println(livro1);
+        
+    }
 
+    public static Autor recuperaAutorDoTeclado() {
+        Scanner s = new Scanner(System.in);
+        System.out.print("Digite o nome do autor: ");
+        String nomeA = s.nextLine();
+        System.out.println();
+        System.out.println("Digite o email do autor: ");
+        String emailA = s.nextLine();
+        System.out.println();
+        System.out.println("Digite o gênero do autor: ");
+        String genderA = s.nextLine();
+        System.out.println();
+        return new Autor(nomeA, emailA, genderA.charAt(0));
     }
 
 }

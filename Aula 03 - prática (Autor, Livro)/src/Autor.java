@@ -29,12 +29,12 @@ public class Autor {
     
     @Override
     public String toString() {
-        return "Nome: " + name + "\n" + "Gênero: " + gender + "   Email: " + email;
+        return "Nome: " + name + "|\t" + "Gênero: " + gender + "\tEmail: " + email;
     }
 
     public static void main(String[] args) {
         Autor a1 = new Autor("Paulo", "paulo@xxx.com", 'M');
-        a1.getEmail();
+
         a1.setEmail("paulo123@hotmail.com");
 
         System.out.println(a1.getEmail());

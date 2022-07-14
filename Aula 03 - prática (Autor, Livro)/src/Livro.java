@@ -1,16 +1,17 @@
+import java.util.ArrayList;
 
 public class Livro {
 
     private String name;
-    private Autor autor;
+    private ArrayList<Autor> autores;
     private double price;
     private int qtyInStock;
 
-    public Livro(String n, Autor a, double p, int qty) {
+    public Livro(String n, double p, int qty) {
         name = n;
-        autor = a;
         price = p;
         qtyInStock = qty;
+        this.autores = new ArrayList<>();
     }
 
     public double getPrice() {
@@ -25,8 +26,8 @@ public class Livro {
         return name;
     }
 
-    public Autor getAutor() {
-        return autor;
+    public void addAutor(Autor novoAutor) {
+        this.autores.add(novoAutor);
     }
 
     public int getQtyInStock() {
@@ -35,9 +36,9 @@ public class Livro {
     
     @Override
     public String toString() {
-        return "Nome do livro: " + name + "\n"
-                + "Autor: " + autor.toString() + "\n" +
-                "Preço: " + price + "    Qtd em estoque: " + qtyInStock;
+        return "Nome do livro: " + name +
+                " | Autores: " + autores.toString() + "\t" +
+                " | Preço: " + price + "\tQtd em estoque: " + qtyInStock;
     }
 
 }
