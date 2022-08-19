@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="br.ufrpe.socialnet.socialnetgui.EventosController">
+  <tabs>
+    <Tab text="Objeto">
+         <content>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="txtFieldNome" layoutX="113.0" layoutY="55.0" />
+                  <TextField fx:id="txtFieldPreco" layoutX="113.0" layoutY="101.0" />
+                  <Button layoutX="162.0" layoutY="186.0" mnemonicParsing="false" onAction="#btnCapturarObjetoPressionado" text="Capturar objeto" />
+                  <Label layoutX="62.0" layoutY="59.0" text="Nome:" />
+                  <Label layoutX="66.0" layoutY="105.0" text="Preço" />
+               </children>
+            </Pane>
+         </content>
+    </Tab>
+    <Tab text="Datas">
+         <content>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <DatePicker fx:id="dtPickerOrigem" layoutX="25.0" layoutY="59.0" onMouseEntered="#btnMouseEntrou" />
+                  <DatePicker fx:id="dtPickerDestino" layoutX="25.0" layoutY="105.0" />
+                  <Button fx:id="btnPeriodo" layoutX="97.0" layoutY="152.0" mnemonicParsing="false" onAction="#btnPeriodoPressionado" text="Período em dias" />
+               </children>
+            </Pane>
+         </content>
+    </Tab>
+  </tabs>
+</TabPane>
