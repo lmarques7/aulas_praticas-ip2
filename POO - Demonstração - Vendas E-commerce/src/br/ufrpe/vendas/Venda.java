@@ -54,4 +54,14 @@ public class Venda {
         return resultado;
     }
 
+    public Cliente getClienteComprador() {
+        return clienteComprador;
+    }
+
+    public void setClienteComprador(Cliente clienteComprador) {
+        this.clienteComprador = clienteComprador;
+    }
+    
+    
+
 }

@@ -21,6 +21,8 @@ public class Principal {
         // Criando a Venda efetivamente    
         
         Venda venda = new Venda(c1, LocalDateTime.now(), "Bruno Marques");
+        venda.setClienteComprador(c1);
+        
         venda.adicionaItem(it1);
         venda.adicionaItem(it2);
         venda.adicionaItem(it3);
