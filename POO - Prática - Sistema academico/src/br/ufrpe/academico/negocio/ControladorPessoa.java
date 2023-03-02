@@ -1,8 +1,14 @@
 package br.ufrpe.academico.negocio;
 
+import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
+import java.time.temporal.TemporalUnit;
+import java.util.ArrayList;
 import java.util.List;
 
 import br.ufrpe.academico.dados.RepositorioGenerico;
+import br.ufrpe.academico.exceptions.AlunoMenorDeIdadeException;
+import br.ufrpe.academico.exceptions.ElementoJaExisteException;
 import br.ufrpe.academico.models.Aluno;
 import br.ufrpe.academico.models.Pessoa;
 
@@ -23,8 +29,18 @@ public class ControladorPessoa {
         return instance;
     }
     
-    public void realizarCadastroAluno(Aluno a) {
-        // TODO (20pts) Cadastrar aluno no repositório de pessoas
+    private boolean ehMaiorDeIdade(LocalDate dataNascimento) {
+        return dataNascimento.until(LocalDate.now(), ChronoUnit.YEARS) >= 18;
+    }
+    
+    public void realizarCadastroAluno(Aluno a) 
+            throws AlunoMenorDeIdadeException, ElementoJaExisteException {
+        // TODO (60pts) Cadastrar aluno no repositório de pessoas
+        if (!ehMaiorDeIdade(a.getDataNascimento())) {
+            throw new AlunoMenorDeIdadeException(a);
+        }
+        
+        this.repositorioPessoas.inserir(a);
         // O aluno só pode ser cadastrado se for maior de idade na data corrente
         // do momento da execução do método. Use o repositorioPessoas para salvar 
         // o objeto Aluno.
@@ -33,10 +49,22 @@ public class ControladorPessoa {
     }
     
     public List<Aluno> buscarAlunosComTelefoneIniciandoCom(String ddd) {
-        // TODO (20pts) Listar alunos (somente alunos) cujo telefone se iniciam com o ddd informado como parâmetro
+        // TODO (60pts) Listar alunos (somente alunos) cujo telefone se iniciam com o ddd informado como parâmetro
         // Observe que você não deve retornar instâncias de professores com este
         // DDD, mas somente alunos. Use o repositorioPessoas para buscar informações.
-        return null;
+        List<Aluno> resultado = new ArrayList<>();
+        
+        for (Pessoa p : this.repositorioPessoas.listar()) {
+            if (p instanceof Aluno) {
+                Aluno a = ((Aluno) p);
+                
+                if (a.getTelefone().startsWith(ddd)) {
+                    resultado.add(a);
+                }
+            }
+        }
+        
+        return resultado;
     }
 
 }

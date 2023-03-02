@@ -4,13 +4,15 @@ import java.time.LocalTime;
 import java.util.List;
 import java.util.Set;
 
+import br.ufrpe.academico.models.enums.DiaDaSemana;
+
 public class Turma {
     public static final int CAPACIDADE_MAXIMA = 60;
     private int ano;
     private int semestre;
 
-    // TODO (10pts) Crie uma enumeração para representar melhor os dias da semana
-    private List<String> diasDaSemana;
+    // TODO (30pts) Crie uma enumeração para representar melhor os dias da semana
+    private List<DiaDaSemana> diasDaSemana;
     private List<LocalTime> horarios;
     private Disciplina disciplina;
     private Set<Aluno> alunos;
@@ -32,11 +34,11 @@ public class Turma {
         this.semestre = semestre;
     }
 
-    public List<String> getDiasDaSemana() {
+    public List<DiaDaSemana> getDiasDaSemana() {
         return diasDaSemana;
     }
 
-    public void setDiasDaSemana(List<String> diasDaSemana) {
+    public void setDiasDaSemana(List<DiaDaSemana> diasDaSemana) {
         this.diasDaSemana = diasDaSemana;
     }
 
@@ -71,5 +73,28 @@ public class Turma {
     public void setProfessorResponsavel(Professor professorResponsavel) {
         this.professorResponsavel = professorResponsavel;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Turma other = (Turma) obj;
+        if (ano != other.ano)
+            return false;
+        if (disciplina == null) {
+            if (other.disciplina != null)
+                return false;
+        } else if (!disciplina.equals(other.disciplina))
+            return false;
+        if (semestre != other.semestre)
+            return false;
+        return true;
+    }
+    
+    
 
 }

@@ -26,7 +26,7 @@ public class ControladorAvaliacao {
 
     public List<Avaliacao> gerarHistoricoEscolar(Aluno aluno, 
             LocalDateTime dataInicial, LocalDateTime dataFinal) {
-        // TODO (30pts) Alterar tipo de retorno para ser um objeto que representa o histório escolar de um aluno
+        // TODO (120pts) Alterar tipo de retorno para ser um objeto que representa o histório escolar de um aluno
         // Você deverá criar uma classe que represente o histórico escolar do 
         // aluno com todas as avaliações que ele realizou dentro do período de
         // datas inicial e final informados como parâmetro. A classe criada também

@@ -2,6 +2,8 @@ package br.ufrpe.academico.models;
 
 import java.time.LocalDateTime;
 
+import br.ufrpe.academico.models.enums.CategoriaNota;
+
 public class Avaliacao {
 
     private Aluno alunoRealizador;
@@ -9,8 +11,8 @@ public class Avaliacao {
     private Turma turma;
     private double nota;
 
-    // TODO (10pts) Crie uma enumeração para representar melhor a categoria de uma nota
-    private String categoriaNota; // representando a categoria como 1a/2a/3a VA
+    // TODO (30pts) Crie uma enumeração para representar melhor a categoria de uma nota
+    private CategoriaNota categoriaNota; // representando a categoria como 1a/2a/3a VA
 
     public Aluno getAlunoRealizador() {
         return alunoRealizador;
@@ -36,11 +38,11 @@ public class Avaliacao {
         this.turma = turma;
     }
 
-    public String getCategoriaNota() {
+    public CategoriaNota getCategoriaNota() {
         return categoriaNota;
     }
 
-    public void setCategoriaNota(String categoriaNota) {
+    public void setCategoriaNota(CategoriaNota categoriaNota) {
         this.categoriaNota = categoriaNota;
     }
 
