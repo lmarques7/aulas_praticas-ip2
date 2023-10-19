@@ -26,4 +26,8 @@ public class ItemVenda {
         this.quantidade = quantidade;
     }
 
+    public double calcularTotal() {
+        return getQuantidade() * getProdutoVendido().getPreco();
+    }
+
 }

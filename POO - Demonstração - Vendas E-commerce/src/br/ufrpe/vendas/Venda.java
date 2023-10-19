@@ -25,7 +25,7 @@ public class Venda {
     }
     
     public void listarItensVenda() {
-        String dataFormatada = DateTimeFormatter.ofPattern("dd/MM/YYYY HH:MM:ss").format(this.dataHoraVenda);
+        String dataFormatada = DateTimeFormatter.ofPattern("dd/MM/YYYY HH:mm:ss").format(this.dataHoraVenda);
         System.out.printf("Data da venda: %s\n", dataFormatada);
         System.out.printf("Cliente: %s | CPF: %s | Idade: %s\n", this.clienteComprador.getNome(),
                 this.clienteComprador.getCpf(), this.clienteComprador.calcularIdade());
@@ -39,7 +39,7 @@ public class Venda {
                     this.itensDeVenda[i].getProdutoVendido().getNome(),
                     this.itensDeVenda[i].getProdutoVendido().getPreco(),
                     this.itensDeVenda[i].getQuantidade(),
-                    this.itensDeVenda[i].getQuantidade() * this.itensDeVenda[i].getProdutoVendido().getPreco());
+                    this.itensDeVenda[i].calcularTotal());
         }
         for (int i = 0; i < 61; i++) System.out.printf("-");
         System.out.println();
@@ -49,7 +49,7 @@ public class Venda {
     public double calcularTotal() {
         double resultado = 0;
         for (int i = 0; i < this.indiceProximoItemVenda; i++) {
-            resultado += (this.itensDeVenda[i].getQuantidade() * this.itensDeVenda[i].getProdutoVendido().getPreco());
+            resultado += (this.itensDeVenda[i].calcularTotal());
         }
         return resultado;
     }
