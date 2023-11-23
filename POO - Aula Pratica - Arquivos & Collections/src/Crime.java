@@ -16,6 +16,7 @@ public class Crime {
 
     public Crime(String data, String nome, String sexo, String objetoUtilizado, String municipio, String idade,
                  String natureza, String totalVitimas) {
+        // Comentário sobre o construtor
         this.data = LocalDate.parse(data, FORMATTER);
         this.nome = nome;
         this.sexo = sexo;
