@@ -6,14 +6,14 @@ public class OfertaProduto {
     
     private Produto produto;
     private float preco;
-    private Loja lojaOFertante;
+    private Loja lojaOfertante;
     private LocalDate data;
 
     public OfertaProduto(Produto produto, float preco, Loja lojaOFertante,
             LocalDate data) {
         this.produto = produto;
         this.preco = preco;
-        this.lojaOFertante = lojaOFertante;
+        this.lojaOfertante = lojaOFertante;
         this.data = data;
     }
 
@@ -33,12 +33,12 @@ public class OfertaProduto {
         this.preco = preco;
     }
 
-    public Loja getLojaOFertante() {
-        return lojaOFertante;
+    public Loja getLojaOfertante() {
+        return lojaOfertante;
     }
 
-    public void setLojaOFertante(Loja lojaOFertante) {
-        this.lojaOFertante = lojaOFertante;
+    public void setLojaOfertante(Loja lojaOfertante) {
+        this.lojaOfertante = lojaOfertante;
     }
 
     public LocalDate getData() {
@@ -52,7 +52,7 @@ public class OfertaProduto {
     @Override
     public String toString() {
         return "OfertaProduto [produto=" + produto + ", preco=" + preco
-                + ", lojaOFertante=" + lojaOFertante + ", data=" + data + "]";
+                + ", lojaOFertante=" + lojaOfertante + ", data=" + data + "]";
     }
 
 }
