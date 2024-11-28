@@ -25,7 +25,7 @@ public class Pessoa {
     
     @Override
     public String toString() {
-        return String.format("Nome: %s. Endereço: %s", this.nome, this.endereco);
+        return String.format("Nome: %s. EndereÃ§o: %s", this.nome, this.endereco);
     }
 
 }

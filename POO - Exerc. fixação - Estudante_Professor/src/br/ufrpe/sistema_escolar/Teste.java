@@ -7,30 +7,30 @@ public class Teste {
     public static void main(String[] args) {
         
         Estudante e1 = new Estudante("Leandro", "Rua da hora");
-        e1.addCursoNota("FÌsica Nuclear", 9.875);
-        e1.addCursoNota("FÌsica qu‚ntica", 8.654);
-        e1.addCursoNota("ComputaÁ„o", 7.56);
+        e1.addCursoNota("F√≠sica Nuclear", 9.875);
+        e1.addCursoNota("F√≠sica qu√¢ntica", 8.654);
+        e1.addCursoNota("Computa√ß√£o", 7.56);
         
-        Estudante e2 = new Estudante("JosÈ", "Ali perto");
-        e2.addCursoNota("FÌsica Nuclear", 1.2);
-        e2.addCursoNota("ComputaÁ„o", 2.345);
-        e2.addCursoNota("HistÛria", 9.82);
+        Estudante e2 = new Estudante("Jos√©", "Ali perto");
+        e2.addCursoNota("F√≠sica Nuclear", 1.2);
+        e2.addCursoNota("Computa√ß√£o", 2.345);
+        e2.addCursoNota("Hist√≥ria", 9.82);
         
         Estudante e3 = new Estudante("Bruna", "Longe");
-        e3.addCursoNota("FÌsica Nuclear", 9.99);
-        e3.addCursoNota("FÌsica qu‚ntica", 9.99);
-        e3.addCursoNota("ProgramaÁ„o", 10);
+        e3.addCursoNota("F√≠sica Nuclear", 9.99);
+        e3.addCursoNota("F√≠sica qu√¢ntica", 9.99);
+        e3.addCursoNota("Programa√ß√£o", 10);
         
         Professor p1 = new Professor("Einstein", "Alemanha");
-        p1.addCurso("FÌsica Nuclear");
-        p1.addCurso("FÌsica qu‚ntica");
+        p1.addCurso("F√≠sica Nuclear");
+        p1.addCurso("F√≠sica qu√¢ntica");
         
         Professor p2 = new Professor("Bill Gates", "EUA");
-        p2.addCurso("ComputaÁ„o");
-        p2.addCurso("ProgramaÁ„o");
+        p2.addCurso("Computa√ß√£o");
+        p2.addCurso("Programa√ß√£o");
         
         Professor p3 = new Professor("Lula", "Brasil");
-        p3.addCurso("HistÛria");
+        p3.addCurso("Hist√≥ria");
         
         Pessoa[] pessoas = {e1, p1, e2, p2, e3, p3};
         
@@ -43,7 +43,7 @@ public class Teste {
     }
     
     public static String listarTurmas(Pessoa[] pessoas) {
-        StringBuffer buffer = new StringBuffer();
+        StringBuilder buffer = new StringBuilder();
         
         ArrayList<Professor> profs = new ArrayList<>();
         ArrayList<Estudante> estuds = new ArrayList<>();
