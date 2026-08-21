@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.Pane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23" fx:controller="br.ufrpe.javafx.tab_pane_demo.tabpanedemo.HelloController">
+  <tabs>
+    <Tab text="Untitled Tab 1">
+         <content>
+            <Pane prefHeight="200.0" prefWidth="200.0" />
+         </content>
+    </Tab>
+    <Tab text="Untitled Tab 2">
+         <content>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <DatePicker fx:id="dtPickerInicial" layoutX="172.0" layoutY="73.0" />
+                  <DatePicker fx:id="dtPickerFinal" layoutX="172.0" layoutY="126.0" />
+                  <Label layoutX="106.0" layoutY="77.0" text="Data inicial" />
+                  <Button layoutX="191.0" layoutY="192.0" mnemonicParsing="false" onAction="#onDiferencaPressionado" text="Calcular diferença em dias" />
+                  <Label layoutX="113.0" layoutY="130.0" text="Data final" />
+               </children>
+            </Pane>
+         </content>
+    </Tab>
+  </tabs>
+</TabPane>

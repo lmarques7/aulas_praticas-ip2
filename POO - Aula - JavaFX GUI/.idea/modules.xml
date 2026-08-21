@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SistemaAcademicoSimples.iml" filepath="$PROJECT_DIR$/SistemaAcademicoSimples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/POO - Aula - JavaFX GUI.iml" filepath="$PROJECT_DIR$/.idea/POO - Aula - JavaFX GUI.iml" />
     </modules>
   </component>
 </project>
