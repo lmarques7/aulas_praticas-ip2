@@ -5,51 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42fe5279-080a-49bd-8a4f-19a8e891ac33" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/aulas_praticas-ip2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Demo01 - Prática sintaxe básica/Demo01 - Prática sintaxe básica.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../E-Commerce/E-Commerce.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/POO - ArrayList e RepositorioContas simples.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POO - Aula - JavaFX GUI/.idea/POO - Aula - JavaFX GUI.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POO - Aula - Sistema Bancário - Herança/.idea/POO - Aula - Sistema Bancário - Herança.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POO - Aula Prática - Zoom Killer/.idea/POO - Aula Prática - Zoom Killer.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POO - Demonstração - Vendas E-commerce/.idea/POO - Demonstração - Vendas E-commerce.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POO - Exerc. fixação - Estudante_Professor/.idea/POO - Exerc. fixação - Estudante_Professor.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SocialNet with GUI/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled/untitled.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../POO - Aula - Sistema Bancário - Herança/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../POO - Aula - Sistema Bancário - Herança/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../POO - Aula - Sistema Bancário - Herança/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../POO - Aula - Sistema Bancário - Herança/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../POO - Demonstração - Vendas E-commerce/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../POO - Demonstração - Vendas E-commerce/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../POO - Demonstração - Vendas E-commerce/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SistemaAcademicoSimples/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SistemaAcademicoSimples/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SistemaAcademicoSimples/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SistemaAcademicoSimples/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocialNet with GUI/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SocialNet with GUI/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocialNet with GUI/.idea/libraries/Maven__com_dlsc_formsfx_formsfx_core_11_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocialNet with GUI/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocialNet with GUI/.idea/libraries/Maven__org_controlsfx_controlsfx_11_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocialNet with GUI/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocialNet with GUI/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocialNet with GUI/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocialNet with GUI/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocialNet with GUI/.idea/libraries/Maven__org_kordamp_bootstrapfx_bootstrapfx_core_0_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocialNet with GUI/.idea/libraries/Maven__org_openjfx_javafx_base_11_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocialNet with GUI/.idea/libraries/Maven__org_openjfx_javafx_base_win_11_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocialNet with GUI/.idea/libraries/Maven__org_openjfx_javafx_controls_11_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocialNet with GUI/.idea/libraries/Maven__org_openjfx_javafx_controls_win_11_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocialNet with GUI/.idea/libraries/Maven__org_openjfx_javafx_fxml_11_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocialNet with GUI/.idea/libraries/Maven__org_openjfx_javafx_fxml_win_11_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocialNet with GUI/.idea/libraries/Maven__org_openjfx_javafx_graphics_11_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocialNet with GUI/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_11_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocialNet with GUI/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocialNet with GUI/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SocialNet with GUI/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocialNet with GUI/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocialNet with GUI/SocialNet with GUI.iml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MeuProjetoIP2026_2/MeuProjetoIP2026_2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MeuProjetoIP2026_2/src/megassena/MegaSena.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MeuProjetoIP2026_2/src/megassena/MegaSenaSimulation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MeuProjetoIP2026_2/src/megassena/ProgramaDemonstracao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/POO - ArrayList e RepositorioContas simples.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/POO - ArrayList e RepositorioContas simples.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../POO - Aula - Sistema Bancário - Herança/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../POO - Aula - Sistema Bancário - Herança/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,18 +21,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "lmarques7"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;lmarques7&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/lmarques7/aulas_praticas-ip2.git",
-    "accountId": "85601c5d-2793-4a68-8f35-e1708ce1ad2f"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/lmarques7/aulas_praticas-ip2.git&quot;,
+    &quot;accountId&quot;: &quot;85601c5d-2793-4a68-8f35-e1708ce1ad2f&quot;
   }
-}]]></component>
+}</component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
@@ -105,7 +67,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "to.speed.mode.migration.done": "true",

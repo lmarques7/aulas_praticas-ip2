@@ -4,50 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83f5929d-cd09-4161-8eb9-4201bbee4c02" name="Changes" comment="Novas classes">
-      <change afterPath="$PROJECT_DIR$/../POO - ArrayList e RepositorioContas simples/.idea/POO - ArrayList e RepositorioContas simples.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POO - Aula - JavaFX GUI/.idea/POO - Aula - JavaFX GUI.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/POO - Aula - Sistema Bancário - Herança.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POO - Aula Prática - Zoom Killer/.idea/POO - Aula Prática - Zoom Killer.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POO - Demonstração - Vendas E-commerce/.idea/POO - Demonstração - Vendas E-commerce.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POO - Exerc. fixação - Estudante_Professor/.idea/POO - Exerc. fixação - Estudante_Professor.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SocialNet with GUI/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled/untitled.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Aula 02 - prática/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Aula 03 - prática (Autor, Livro)/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Aula 03 - prática (Autor, Livro)/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Generics - Exemplo Lista 02/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MeuProjetoIP2026_2/MeuProjetoIP2026_2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../POO - ArrayList e RepositorioContas simples/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../POO - Aula prática - Streams &amp; Lambdas - Solutions/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../POO - Demonstração - Vendas E-commerce/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SistemaAcademicoSimples/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SistemaAcademicoSimples/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SistemaAcademicoSimples/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SistemaAcademicoSimples/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocialNet with GUI/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SocialNet with GUI/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocialNet with GUI/.idea/libraries/Maven__com_dlsc_formsfx_formsfx_core_11_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocialNet with GUI/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocialNet with GUI/.idea/libraries/Maven__org_controlsfx_controlsfx_11_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocialNet with GUI/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocialNet with GUI/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocialNet with GUI/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocialNet with GUI/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocialNet with GUI/.idea/libraries/Maven__org_kordamp_bootstrapfx_bootstrapfx_core_0_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocialNet with GUI/.idea/libraries/Maven__org_openjfx_javafx_base_11_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocialNet with GUI/.idea/libraries/Maven__org_openjfx_javafx_base_win_11_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocialNet with GUI/.idea/libraries/Maven__org_openjfx_javafx_controls_11_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocialNet with GUI/.idea/libraries/Maven__org_openjfx_javafx_controls_win_11_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocialNet with GUI/.idea/libraries/Maven__org_openjfx_javafx_fxml_11_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocialNet with GUI/.idea/libraries/Maven__org_openjfx_javafx_fxml_win_11_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocialNet with GUI/.idea/libraries/Maven__org_openjfx_javafx_graphics_11_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocialNet with GUI/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_11_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocialNet with GUI/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocialNet with GUI/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SocialNet with GUI/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocialNet with GUI/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocialNet with GUI/SocialNet with GUI.iml" beforeDir="false" />
+    <list default="true" id="83f5929d-cd09-4161-8eb9-4201bbee4c02" name="Changes" comment="Config files">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,12 +28,12 @@
     &quot;assignee&quot;: &quot;lmarques7&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/lmarques7/aulas_praticas-ip2.git",
-    "accountId": "85601c5d-2793-4a68-8f35-e1708ce1ad2f"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/lmarques7/aulas_praticas-ip2.git&quot;,
+    &quot;accountId&quot;: &quot;85601c5d-2793-4a68-8f35-e1708ce1ad2f&quot;
   }
-}]]></component>
+}</component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
@@ -89,33 +47,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.AplicacaoRepositorio.executor": "Run",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/lmarq/git/aulas_praticas-ip2/POO - Aula - Sistema Bancário - Herança",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.41785374",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AplicacaoRepositorio.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/lmarq/git/aulas_praticas-ip2/POO - Aula - Sistema Bancário - Herança&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.41785374&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="AplicacaoRepositorio" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.ufrpe.sistema_bancario.dados.AplicacaoRepositorio" />
@@ -164,7 +122,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Novas classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Novas classes" />
+    <MESSAGE value="Removendo arquivos" />
+    <MESSAGE value="Removendo .settings" />
+    <MESSAGE value="ListandoParametros" />
+    <MESSAGE value="Config files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Config files" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
