@@ -3,11 +3,11 @@ package br.ufrpe.code.sistema_bancario;
 import java.util.ArrayList;
 
 public class RepositorioContas {
-    
+
     private final ArrayList<Conta> contas;
     
     public RepositorioContas (int capacidadeInicial) {
-        this.contas = new ArrayList<>(capacidadeInicial);       
+        this.contas = new ArrayList<>(capacidadeInicial);
     }
 
     /**
@@ -70,7 +70,7 @@ public class RepositorioContas {
         for (Conta interna : contas) {
             if (interna.getNumero().equals(numero)) {
                 resultado = interna;
-                break;
+                break; // Obrigado a usar break por causa do for-each
             }
         }
         return resultado;

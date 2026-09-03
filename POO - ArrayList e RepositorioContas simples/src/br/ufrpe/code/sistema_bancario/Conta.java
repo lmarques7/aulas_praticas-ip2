@@ -1,14 +1,18 @@
 package br.ufrpe.code.sistema_bancario;
+
+import java.util.UUID;
+
 public class Conta {
 
     // Pode ser 'final' se o número não é alterado depois que a conta é instanciada
     private final String numero;
     private double saldo;
 
-    public Conta() { // construtor default
+    public Conta() {
+        // construtor default
         // Gerando número aleatório da conta, como uma string de caracteres aleatórios com 6 dígitos
         // Exemplo de saída: "4f3b89"
-        numero = java.util.UUID.randomUUID().toString().substring(0, 6);
+        numero = UUID.randomUUID().toString().substring(0, 6);
         saldo = 0.0;
     }
     
