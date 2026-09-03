@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class RepositorioContas {
     
-    private ArrayList<Conta> contas;
+    private final ArrayList<Conta> contas;
     
     public RepositorioContas (int capacidadeInicial) {
         this.contas = new ArrayList<>(capacidadeInicial);       
@@ -26,6 +26,7 @@ public class RepositorioContas {
             for (Conta interna : contas) {
                 if (interna.getNumero().equals(num)) {
                     existeContaComNumeroIgual = true;
+                    break;
                 }
             }
             if (!existeContaComNumeroIgual) {
@@ -58,14 +59,30 @@ public class RepositorioContas {
         }
         return numeroExiste;
     }
+
+    /**
+     * Retorna a primeira ocorrência da Conta cujo número é entregue como parâmetro
+     * @param numero Número da conta procurada
+     * @return A objeto Conta procurado
+     */
+    public Conta obterContaPorNumero(String numero) {
+        Conta resultado = null;
+        for (Conta interna : contas) {
+            if (interna.getNumero().equals(numero)) {
+                resultado = interna;
+                break;
+            }
+        }
+        return resultado;
+    }
     
     public String toString() {
         // Lembre-se toString não imprime nada, somente retorna uma 
         // representação textual do objeto em questão 
         String resultado = "";
         for (Conta c : this.contas) {
-            resultado = resultado + c.getNumero() + "  |  Saldo: " 
-                            + c.getSaldo() + "\n";
+            String saldoFormatado = String.format("%.2f", c.getSaldo());
+            resultado += c.getNumero() + "  |  Saldo: " + saldoFormatado + "\n";
         }
             
         return resultado;

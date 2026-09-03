@@ -1,11 +1,14 @@
 package br.ufrpe.code.sistema_bancario;
 public class Conta {
 
-    private String numero;
+    // Pode ser 'final' se o número não é alterado depois que a conta é instanciada
+    private final String numero;
     private double saldo;
 
     public Conta() { // construtor default
-        numero = "000-0";
+        // Gerando número aleatório da conta, como uma string de caracteres aleatórios com 6 dígitos
+        // Exemplo de saída: "4f3b89"
+        numero = java.util.UUID.randomUUID().toString().substring(0, 6);
         saldo = 0.0;
     }
     
@@ -22,6 +25,7 @@ public class Conta {
         if (valor < saldo) {
             saldo = saldo - valor;            
         } else {
+            // Lugar do sysout dentro de classe básica (model) não é adequado e será melhorado nas próximas aulas
             System.out.println("Saldo insuficiente");
         }        
     }
