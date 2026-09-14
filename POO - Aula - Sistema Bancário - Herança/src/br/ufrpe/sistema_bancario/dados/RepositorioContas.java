@@ -94,4 +94,14 @@ public class RepositorioContas {
         }
         return poupancas;
     }
+
+    public Conta procurarConta(String numero) {
+        Conta resultado = null;
+        for (Conta c : this.contas) {
+            if (c.getNumero().equals(numero)) {
+                resultado = c;
+            }
+        }
+        return  resultado;
+    }
 }
